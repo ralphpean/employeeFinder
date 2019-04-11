@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Linking in Style Sheets and Javascript-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/pure-min.css">
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <!--Linking in Style Sheets and Javascript-->
+
+    <title>Career Survey</title>
+</head>
+
+<body>
+
+    <h3 class="content-subhead is-center">About You</h3>
+        <div class="is-center">
+            <p>Name (Required)</p>
+            <input type="text" id="name" class="form-control1" required>
+            <!-- <p>Link to Photo Image (Required)</p>
+            <input type="text" id="img" class="form-control2" required> -->
+            <br>
+            <div id="error"></div><br>
+            <button id="submit" type="button" class="btn btn-primary" data-toggle="modal" data-target="#results-modal">
+                Submit
+            </button>
+        </div>
+
+    <div class="content-wrapper">
+        <div class="content">
+            <div>
+                <h3 class="content-subhead ">Question One</h3>
+                <p>The New England Patriots is the greatest team in the NFL </p>
+                <select class="custom-select" id="q1">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="ribbon l-box-lrg">
+            <div>
+                <h3 class="ribbon content-subhead">Question Two</h3>
+                <p>The Patriot's Offense has been the best the past 10 years</p>
+                <select class="custom-select" id="q2">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <h3 class="content-subhead ">Question Three</h3>
+                <p>The Patriots Defense has been the best the past 10 years</p>
+                <select class="custom-select" id="q3">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="ribbon l-box-lrg">
+            <div>
+                <h3 class="ribbon content-subhead">Question Four</h3>
+                <p>Tom Brady is the greatest quarterback to have ever played the game</p>
+                <select class="custom-select" id="q4">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <h3 class="content-subhead ">Question Five</h3>
+                <p>Bill Belichick is the greatest coach ever </p>
+                <select class="custom-select" id="q5">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree)</option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="ribbon l-box-lrg">
+            <div>
+                <h3 class="ribbon content-subhead ">Question Six</h3>
+                <p>Robert Kraft is the best CEO in the NFl</p>
+                <select class="custom-select" id="q6">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <h3 class="content-subhead">Question Seven</h3>
+                <p>The Patriots have the best winning system in place</p>
+                <select class="custom-select" id="q7">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2(Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="ribbon l-box-lrg">
+            <div>
+                <h3 class="ribbon content-subhead ">Question Eight</h3>
+                <p>The Patriots most likely to win the superbowl next year</p>
+                <select class="custom-select" id="q8">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <h3 class="content-subhead">Question Nine</h3>
+                <p>Are the Patriots the most hated team in the NFL</p>
+                <select class="custom-select" id="q9">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <div class="ribbon l-box-lrg">
+            <div>
+                <h3 class="ribbon content-subhead ">Question Ten</h3>
+                <p>Do you think that the Patriots cheat</p>
+                <select class="custom-select" id="q10">
+                    <option value="" selected disabled>Select an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2 (Disagree) </option>
+                    <option value="3">3 (Neutral) </option>
+                    <option value="4">4 (Agree) </option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <!-- <hr> -->
+        
+    </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header" id="resultName">
+                    <h5 class="modal-title" id="exampleModalLongTitle">Best Match:</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="resultName">
+                    <img id="resultImg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/survey.js"></script>
+</body>
+
+</html>
